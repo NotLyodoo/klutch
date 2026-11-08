@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="logo.png">
+<title>Confidentialité de Klutch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Figtree:wght@400;600&display=swap">
+<style>
+/* Document légal sobre : une colonne de lecture, en-tête à la marque Klutch (bleu nuit + or MVP). */
+:root{
+  --fond:#F5F6FA; --papier:#FFFFFF; --encre:#151B2E; --doux:#5B6480; --trait:#DEE2EC; --or:#B07A00; --encadre:#F1F3F9;
+  --titre:"Chakra Petch","Segoe UI",system-ui,sans-serif;
+  --texte:"Figtree","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --fond:#0B1020; --papier:#121A2E; --encre:#E8ECF6; --doux:#9AA3C0; --trait:#26304D; --or:#FFC23D; --encadre:#18213A; color-scheme:dark}}
+:root[data-theme="dark"]{--fond:#0B1020; --papier:#121A2E; --encre:#E8ECF6; --doux:#9AA3C0; --trait:#26304D; --or:#FFC23D; --encadre:#18213A; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--fond);color:var(--encre);font:16px/1.65 var(--texte);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 64px}
+.page{max-width:720px;margin:0 auto;background:var(--papier);border:1px solid var(--trait);border-radius:14px;padding:clamp(22px,5vw,48px)}
+header{display:flex;gap:14px;align-items:center;padding-bottom:22px;margin-bottom:26px;border-bottom:1px solid var(--trait)}
+header svg{width:46px;height:46px;flex:none}
+h1{font-family:var(--titre);font-size:clamp(24px,4vw,30px);line-height:1.15;margin:0;text-wrap:balance}
+.date{color:var(--doux);font-size:14px;margin:4px 0 0}
+h2{font-family:var(--titre);font-size:19px;margin:30px 0 8px;text-wrap:balance}
+p,li{max-width:65ch}
+ul{padding-left:20px}
+li{margin:4px 0}
+.resume{background:var(--encadre);border-radius:10px;padding:14px 18px;margin:0 0 6px}
+.tableau{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;min-width:480px;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--trait)}
+th{font-family:var(--titre);font-weight:600}
+.en{margin-top:44px;padding-top:26px;border-top:2px solid var(--or)}
+a{color:var(--or)}
+</style>
+</head>
+<body>
+
+<div class="page">
+<p style="margin:0 0 18px"><a href="./">← Klutch</a></p>
+<header>
+  <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#0E1424"/><path d="M10 20V10h10M44 10h10v10M54 44v10H44M20 54H10V44" fill="none" stroke="#FFC23D" stroke-width="3" stroke-linecap="round"/><g transform="translate(32 32) skewX(-12) translate(-32 -32)"><path d="M21 17h8.6v11.4L38.8 17h10.4L37.4 30.6 49.8 47H39.6l-8.4-11.8-1.6 1.9V47H21z" fill="#FFC23D"/></g></svg>
+  <div><h1>Politique de confidentialité de Klutch</h1><p class="date">En vigueur depuis le 9 novembre 2026</p></div>
+</header>
+
+<p class="resume">En bref : Klutch fonctionne sur l'ordinateur de son utilisateur. Toutes les données restent sur cet ordinateur. Rien n'est vendu, partagé ni envoyé à un serveur de Klutch, qui n'en a pas.</p>
+
+<h2>Qui est responsable</h2>
+<p>Klutch est un logiciel personnel créé et utilisé par Lyodoo, streamer Twitch, pour publier les clips de ses lives sur son propre compte TikTok.</p>
+
+<h2>Données utilisées</h2>
+<div class="tableau"><table>
+  <thead><tr><th>Donnée</th><th>Pourquoi</th><th>Où elle est gardée</th></tr></thead>
+  <tbody>
+    <tr><td>Nom d'utilisateur TikTok</td><td>Afficher le compte connecté</td><td>Sur l'ordinateur de l'utilisateur</td></tr>
+    <tr><td>Jetons d'accès TikTok</td><td>Publier les vidéos validées</td><td>Sur l'ordinateur de l'utilisateur</td></tr>
+    <tr><td>Liste et statistiques des vidéos publiées (vues, likes, commentaires, partages)</td><td>Afficher les résultats de chaque clip dans l'application</td><td>Sur l'ordinateur de l'utilisateur</td></tr>
+    <tr><td>Enregistrement des lives Twitch de l'utilisateur et messages publics du chat</td><td>Repérer les meilleurs moments</td><td>Sur l'ordinateur de l'utilisateur</td></tr>
+  </tbody>
+</table></div>
+<p>La transcription des sous-titres est faite sur l'ordinateur de l'utilisateur, sans service externe.</p>
+
+<h2>Ce que Klutch envoie</h2>
+<ul>
+  <li><strong>À TikTok :</strong> uniquement les vidéos validées par l'utilisateur, avec la description qu'il a choisie.</li>
+  <li><strong>À Discord :</strong> si l'utilisateur l'active, un message sur son propre serveur indiquant que des clips sont prêts.</li>
+</ul>
+<p>Aucune donnée n'est vendue, louée ni utilisée pour de la publicité.</p>
+
+<h2>Durée de conservation</h2>
+<p>Les données restent sur l'ordinateur jusqu'à ce que l'utilisateur les supprime dans Klutch, ou supprime le dossier de l'application.</p>
+
+<h2>Tes choix</h2>
+<ul>
+  <li>Déconnecter TikTok dans les réglages de Klutch supprime les jetons d'accès de l'ordinateur.</li>
+  <li>L'accès peut aussi être retiré à tout moment depuis les paramètres du compte TikTok.</li>
+</ul>
+
+<h2>Contact</h2>
+<p>Lyodoo, via la chaîne Twitch <a href="https://www.twitch.tv/lyodoo" target="_blank" rel="noopener">twitch.tv/lyodoo</a>.</p>
+
+<div class="en" lang="en">
+<h2>Privacy Policy (English)</h2>
+<p><strong>In short.</strong> Klutch runs on its user's own computer. All data stays on that computer. Nothing is sold, shared, or sent to any Klutch server; there is none.</p>
+<p><strong>Data used.</strong> TikTok username (to show the connected account); TikTok access tokens (to post approved videos); the list and statistics of posted videos (views, likes, comments, shares, shown in the app); recordings of the user's own Twitch streams and public chat messages (to find highlights). All of it is stored locally. Captions are transcribed locally, without any external service.</p>
+<p><strong>What Klutch sends.</strong> To TikTok: only videos the user approved, with the caption the user chose. To Discord, if enabled: a message on the user's own server saying clips are ready. No data is sold, rented, or used for advertising.</p>
+<p><strong>Retention and choices.</strong> Data stays on the computer until the user deletes it. Disconnecting TikTok in Klutch's settings deletes the access tokens; access can also be revoked anytime in TikTok's account settings.</p>
+<p><strong>Contact.</strong> Lyodoo, via <a href="https://www.twitch.tv/lyodoo" target="_blank" rel="noopener">twitch.tv/lyodoo</a>.</p>
+</div>
+</div>
+
+</body>
+</html>

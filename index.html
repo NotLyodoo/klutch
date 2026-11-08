@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="logo.png">
+<title>Klutch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,700;0,600&family=Figtree:wght@400;600&display=swap">
+<style>
+/* Page d'accueil d'une seule colonne, look unique « écran de fin de round » : bleu nuit + or MVP. */
+:root{
+  --nuit:#0E1424; --acier:#18213A; --texte:#E8ECF6; --doux:#9AA3C0; --or:#FFC23D; --trait:#26304D;
+  --titre:"Chakra Petch","Segoe UI",system-ui,sans-serif;
+  --corps:"Figtree","Segoe UI",system-ui,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--nuit);color:var(--texte);font:16px/1.6 var(--corps);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:56px 64px}
+main{max-width:680px;margin:0 auto;display:grid;gap:40px}
+.haut{display:flex;gap:18px;align-items:center}
+.haut svg{width:72px;height:72px;flex:none}
+h1{font-family:var(--titre);font-style:italic;font-weight:700;font-size:clamp(44px,9vw,64px);line-height:1;margin:0;letter-spacing:.5px}
+.accroche{font-size:19px;max-width:52ch;margin:0;text-wrap:balance}
+.doux{color:var(--doux)}
+h2{font-family:var(--titre);font-weight:600;font-size:20px;margin:0 0 14px}
+ol{list-style:none;padding:0;margin:0;display:grid;gap:12px;counter-reset:etape}
+ol li{counter-increment:etape;display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start;background:var(--acier);border-radius:12px;padding:14px 16px}
+ol li::before{content:counter(etape);font-family:var(--titre);font-weight:600;font-size:18px;color:var(--nuit);background:var(--or);border-radius:9px;width:32px;height:32px;display:grid;place-items:center}
+ol b{display:block}
+.liens{display:flex;flex-wrap:wrap;gap:12px}
+.liens a{color:var(--texte);text-decoration:none;border:1px solid var(--trait);border-radius:10px;padding:10px 16px;font-weight:600}
+.liens a:hover,.liens a:focus-visible{border-color:var(--or);color:var(--or)}
+a{color:var(--or)}
+:focus-visible{outline:2px solid var(--or);outline-offset:2px}
+footer{color:var(--doux);font-size:14px;border-top:1px solid var(--trait);padding-top:18px}
+</style>
+</head>
+<body>
+
+<main>
+  <div class="haut">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#18213A"/><path d="M10 20V10h10M44 10h10v10M54 44v10H44M20 54H10V44" fill="none" stroke="#FFC23D" stroke-width="3" stroke-linecap="round"/><g transform="translate(32 32) skewX(-12) translate(-32 -32)"><path d="M21 17h8.6v11.4L38.8 17h10.4L37.4 30.6 49.8 47H39.6l-8.4-11.8-1.6 1.9V47H21z" fill="#FFC23D"/></g></svg>
+    <h1>Klutch</h1>
+  </div>
+
+  <p class="accroche">L'outil de Lyodoo pour transformer ses lives Twitch en clips verticaux sous-titrés, publiés sur son TikTok après validation.</p>
+
+  <section>
+    <h2>Comment ça marche</h2>
+    <ol>
+      <li><span><b>Enregistrement du live</b><span class="doux">Klutch enregistre le live Twitch sur l'ordinateur de Lyodoo.</span></span></li>
+      <li><span><b>Repérage des meilleurs moments</b><span class="doux">Réactions, mots prononcés, chat et killfeed de Valorant.</span></span></li>
+      <li><span><b>Montage vertical</b><span class="doux">Clip 9:16 avec sous-titres et miniature.</span></span></li>
+      <li><span><b>Validation puis publication</b><span class="doux">Chaque clip est regardé et validé à la main avant d'être publié sur TikTok.</span></span></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Informations</h2>
+    <div class="liens">
+      <a href="conditions.html" target="_blank" rel="noopener">Conditions d'utilisation</a>
+      <a href="confidentialite.html" target="_blank" rel="noopener">Politique de confidentialité</a>
+    </div>
+  </section>
+
+  <footer>Klutch est un outil personnel : il n'est ni vendu ni proposé au public. Contact : <a href="https://www.twitch.tv/lyodoo" target="_blank" rel="noopener">twitch.tv/lyodoo</a>.</footer>
+</main>
+
+</body>
+</html>
